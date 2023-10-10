@@ -2,16 +2,10 @@
 {
     private static void Main(string[] args)
     {
-        int i = 0;
-        while (i < 5)
+        string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+        foreach (string car in cars)
         {
-            Console.WriteLine(i);
-            i++;
-        }
-
-        for (int j = 0; j < 5; j++)
-        {
-            Console.WriteLine(j);
+            Console.WriteLine(car);
         }
     }
 }
