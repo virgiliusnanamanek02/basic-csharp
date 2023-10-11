@@ -1,5 +1,4 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
     static int addTwoNumbers(int a, int b)
     {
