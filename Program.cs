@@ -6,21 +6,17 @@
     }
     private static void Main(string[] args)
     {
-        Employee employee = new Employee
-        {
-            name = "John",
-            age = 30
-        };
+        Cart cart = new Cart();
 
-        string employeeIntroduction = employee.Introduction();
-        Console.WriteLine(employeeIntroduction);
+        cart.AddItem(1);
+        cart.AddItem(2);
+        cart.AddItem(3);
 
-        Person person = new Person
-        {
-            name = "Alice",
-            age = 25
-        };
 
-        string personIntroduction = person.Introduction();
-        Console.WriteLine(personIntroduction);    }
+        cart.DisplayCart();
+
+        cart.RemoveItem(1);
+
+        cart.DisplayCart();
+    }
 }
