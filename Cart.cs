@@ -23,14 +23,14 @@ public class Cart
 
     public int Size()
     {
-        return this.data.Count;
+        return data.Count;
     }
 
     public void DisplayCart()
     {
-        for (int i = 0; i < this.data.Count; i++)
+        for (int i = 0; i < data.Count; i++)
         {
-            Console.WriteLine(this.data[i]);
+            Console.WriteLine(data[i]);
         }
     }
 }
