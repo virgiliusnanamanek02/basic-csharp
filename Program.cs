@@ -6,14 +6,21 @@
     }
     private static void Main(string[] args)
     {
-        Person first = new Person
+        Employee employee = new Employee
         {
             name = "John",
             age = 30
         };
 
-        Console.WriteLine(first.Introduction());
-        Console.WriteLine(first.Name);
-        Console.WriteLine(first.Age);
-    }
+        string employeeIntroduction = employee.Introduction();
+        Console.WriteLine(employeeIntroduction);
+
+        Person person = new Person
+        {
+            name = "Alice",
+            age = 25
+        };
+
+        string personIntroduction = person.Introduction();
+        Console.WriteLine(personIntroduction);    }
 }
